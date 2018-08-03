@@ -1,0 +1,107 @@
+@charset "utf-8";
+
+@import url("http://fonts.googleapis.com/earlyaccess/nanumgothic.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800");
+@import url('https://fonts.googleapis.com/css?family=Poiret+One');
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+@import url('https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900');
+
+/*font
+opensanskr
+	font-family: 'Noto Sans KR', sans-sarif;
+
+poiret one
+	font-family: 'Poiret One', cursive;
+
+gothic a1
+	font-family: 'Gothic A1', sans-serif;
+*/
+
+
+/* reset */
+html,body {margin:0; padding:0; font-family:"Gothic A1","나눔고딕","Nanum Gothic","Helvetica Neue",Arial,sans-serif; font-weight:normal; font-size:12px; height:100%; color:#333; -webkit-text-size-adjust:none; position:relative; line-height:1.2;}
+dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote {margin:0; padding:0; -webkit-text-size-adjust:none;}
+th,td,input,textarea,select {font-size:12px; color:#333; font-family:"나눔고딕","Nanum Gothic","Helvetica Neue",Arial,sans-serif; -webkit-text-size-adjust:none;}
+th,td {word-break:break-all; word-wrap:break-word; -webkit-text-size-adjust:none;}
+table {border-spacing:0; border-collapse:collapse; -webkit-text-size-adjust:none; border:0; table-layout:fixed;}
+address,caption,cite,code,dfn,var {font-style:normal; font-weight:normal; -webkit-text-size-adjust:none;}
+em {font-style:normal; -webkit-text-size-adjust:none;}
+ol,ul,li {list-style:none;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;}
+abbr,acronym {border:0;}
+hr,legend,caption {visibility:hidden; overflow:hidden; line-height:0; width:0; height:0; margin:0; padding:0;}
+img,fieldset {border:0 none;}
+label {cursor:pointer;}
+a {color:inherit;}
+a:link, a:visited, a:hover {color:inherit; text-decoration:none;}
+a:active {text-decoration:none;}
+input,img {vertical-align:middle;}
+
+body {background-color: #151515;}
+
+/*header*/
+.header_container {position: fixed; left: 0; top: 0; width: 100%; height: 150px; background-color: rgb(0,0,0,0.9); z-index: 3000;}
+.header_container .logo {text-align: center; margin-top: 20px;}
+.header_container .logo_text {text-align: center; margin-top: 5px; font-family: 'Poiret One', cursive; color: white; font-size: 15px; font-weight: 100; text-transform: uppercase; letter-spacing: 0.2em; color: white;}
+.header_container .nav_wrap {text-align: center;}
+.header_container .nav_wrap li a {position: relative;}
+.header_container .nav_wrap li {color: white; display: inline-block; font-size: 20px; font-family: 'Gothic A1', sans-serif; text-transform: uppercase; font-weight: 300; margin-top: 40px; margin-left: 80px;}
+.header_container .nav_wrap li:first-child {margin-left: 0px;}
+.header_container .nav_wrap li a:hover {color: #585858;}
+.header_container .nav_wrap li:hover a:after {transform: scale(1);}
+.header_container .nav_wrap li a::after {content: ""; position: absolute; left: 0px; right: 0px; width: 100%; top: 50%; transition: all 0.3s; border-top: 1px solid white; transform: scale(0);}
+
+/*intro*/
+.intro_container {height: 100%; padding-top: 0px; box-sizing: border-box; min-width: 1280px;}
+.intro_container .intro_background {height: 100%; background-image: url(images/img_bg01.jpg); background-repeat: no-repeat; background-position: center top; background-size: cover; text-align: center; background-attachment: fixed;}
+
+/*text*/
+#text {height: 600px;}
+#text .text_container {margin: 20px; padding-top: 150px; text-align: center;}
+#text .text_container h2 {font-family: 'Gothic A1', sans-serif; font-size: 38px; color: white; background-color: #ff0090; display: inline;}
+#text .text_container p {font-family: 'Gothic A1', sans-serif; font-size: 15px; margin-top: 30px; color: white; font-weight: 200; line-height: 1.5em;}
+#text .text_container a .text_box {display:inline-block; border: 1px solid white; font-size: 15px; color: black; padding: 5px 20px; margin-top: 30px; font-weight: 600; font-family: 'Gothic A1', sans-serif; font-weight: 600; background-color: white;}
+#text .text_container a .text_box:hover {color: white; background-color: #ff0090; font-weight: 600; border: 1px solid #ff0090;}
+
+/*portfolio*/
+#portfolio {height: auto; padding-top: 120px; margin-bottom: 120px;}
+#portfolio .portfolio_s h4 {font-family: 'Gothic A1', sans-serif; font-size: 38px; color: white; text-transform: uppercase; text-align: center; padding: 10px; margin-top: 40px; padding-bottom: 0px;}
+#portfolio .portfolio_s .portfolio_text p {color: white; text-align: center; margin-bottom: 20px; margin-top: 5px; font-size: 15px; font-family: 'Gothic A1', sans-serif; font-weight: 200;}
+#portfolio .portfolio_s ul {width: 100%; margin: 0 auto; overflow: hidden;}
+#portfolio .portfolio_s ul .item:hover img {transform: scale(1.05); transition: all 0.3s;}
+#portfolio .portfolio_s ul .item {width: 470px; height: 380px; margin: 5px 0 0 5px; display: inline-block; float: left; box-sizing: border-box; overflow: hidden; position: relative;}
+#portfolio .portfolio_s ul .item:hover .type {position: absolute; left: 0; right: 0; top: 60%; bottom: 0; background-color: rgba(0,0,0,0.8); color: #fff; padding: 20px;}
+#portfolio .portfolio_s ul .item .type .title {font-size: 18px; font-weight: 600; font-family: 'Gothic A1', sans-serif;}      
+#portfolio .portfolio_s ul .item .type .date {font-size: 12px; margin-top: 0px; font-weight: 100; font-family: 'Gothic A1', sans-serif;}
+#portfolio .portfolio_s ul .item .type .subtitle {font-size: 15px; margin-top: 10px; font-weight: 200; font-family: 'Gothic A1', sans-serif;}
+
+#portfolio .portfolio_b h4 {font-family: 'Gothic A1', sans-serif; font-size: 38px; color: white; text-transform: uppercase; text-align: center; padding: 10px; margin-top: 150px; padding-bottom: 0px;}
+#portfolio .portfolio_b .portfolio_text p {color: white; text-align: center; margin-bottom: 20px; margin-top: 5px; font-size: 15px; font-family: 'Gothic A1', sans-serif; font-weight: 200;}
+#portfolio .portfolio_b ul {width: 100%; margin: 0 auto; overflow: hidden;}
+#portfolio .portfolio_b ul .b_item:hover .b_type::before {transform: scale(1);}
+#portfolio .portfolio_b ul .b_item:hover .b_type::after {transform: scale(1);}
+#portfolio .portfolio_b ul .b_item:hover .b_type {opacity: 1;}
+#portfolio .portfolio_b ul .b_item {width: 950px; height: 500px; display: inline-block; float: left; box-sizing: border-box; overflow: hidden; position: relative;}
+#portfolio .portfolio_b ul .b_item .b_type {color: white; position: absolute; left: 0; right: 0; top: 0%; bottom: 0; background-color: rgba(0,0,0,0.8); color: #fff; padding: 20px; text-align: center; opacity:0;} 
+#portfolio .portfolio_b ul .b_item .b_type::before, 
+#portfolio .portfolio_b ul .b_item .b_type::after {content: ""; position: absolute; left: 5px; right: 5px; top: 5px; bottom: 5px; transition: all 0.5s;} 
+#portfolio .portfolio_b ul .b_item .b_type::before {border-top: 1px solid #fff; border-bottom: 1px solid #fff; transform: scale(0,1);}
+#portfolio .portfolio_b ul .b_item .b_type::after {border-left: 1px solid #fff; border-right: 1px solid #fff; transform: scale(1,0);}
+#portfolio .portfolio_b ul .b_item .b_type .b_title {font-size: 40px; font-weight: 200; font-family: 'Gothic A1', sans-serif; text-transform: uppercase; margin-top: 180px; letter-spacing: 0.5em;} 
+#portfolio .portfolio_b ul .b_item .b_type .b_subtitle {font-size: 18px; margin-top: 20px; font-weight: 100; font-family: 'Gothic A1', sans-serif; letter-spacing: 0.2em;}
+
+
+
+/*about*/
+#about {height: 100%; clear: both;}
+#about .about_container {height: 100%; background-image: url(images/img_bg01.jpg); background-repeat: no-repeat; background-position: center top; background-size: cover; text-align: center; background-attachment: fixed; position: relative;}
+#about .about_container .black::before {content: ""; position: absolute; left: 0px; right: 0px; top: 0px; bottom: 0px; background-color: rgb(0,0,0,0.85);}
+#about .about_container .img_pf {padding-top: 200px; background-size: 50%; position: relative; color: white;}
+#about .about_container .img_pf .selfimg img {border: 1px solid white; padding: 0.2%;}
+#about .about_container .img_pf .self {color: white; margin-top: 20px; font-size: 20px; font-weight: 200; line-height: 1.7em;}
+#about .about_container .img_pf .self li a{text-decoration-line: underline;}
+#about .about_container .img_pf .sns li {display: inline-block; margin-left: 25px; text-align: center; border: 1.5px solid white; border-radius: 50%; margin-top: 30px;}
+#about .about_container .img_pf .sns li:first-child {margin-left: 0px;}
+
+
+::selection {background-color: #01fff6; color: #2b2b2b;} /*글자그대로하면 배경색바뀜*/
